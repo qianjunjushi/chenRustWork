@@ -1,3 +1,8 @@
+use std::borrow::Cow;
+
 fn main() {
-    println!("Hello, world!");
+    let x=&3;
+    let &y=x;
+    
+    println!("Hello, world!{}",y);
 }
